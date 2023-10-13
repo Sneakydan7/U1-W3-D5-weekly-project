@@ -399,18 +399,14 @@ console.log(sumAllTheYears(movies));
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
-function searchByTitle(string){
-  let newArr = []
+function searchByTitle(string) {
+  let newArr = [];
 
   movies.forEach((e) => {
     if (e.Title.includes(string)) arrTitle.push(e);
   });
   return newArr;
-
-
-  
-
-
+}
 
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
@@ -488,6 +484,7 @@ function addLi() {
   newLi.innerText = "ciao!";
   ul.appendChild(newLi);
 }
+
 addLi();
 addLi();
 addLi();
@@ -511,6 +508,7 @@ function addClassTr() {
   trs.forEach((e) => e.classList.add("test"));
 }
 addClassTr();
+
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27

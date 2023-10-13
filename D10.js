@@ -402,7 +402,10 @@ console.log(sumAllTheYears(movies));
 function searchByTitle(string){
   let newArr = []
 
-movies.forEach((e) => {if (e.Title.includes(string)){newArr.push(e)}}){newArr.push(e)}}
+  movies.forEach((e) => {
+    if (e.Title.includes(string)) arrTitle.push(e);
+  });
+  return newArr;
 
 
   
